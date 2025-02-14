@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* 그룹화  */
+h1, h2 {
+    border: 1px solid red;
+}
+h3 {
+    border: 1px solid rgb(255, 0, 251);
+}
+
+/* 자식 선택 */
+p strong {
+    border: 1px solid rgb(0, 0, 255);
+}
+
+/* 순서 선택 */
+ul li:nth-of-type(1) {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+ul li:nth-of-type(2) {
+    border: 1px solid rgb(68, 255, 0);
+}
+
+/* 마지막 선택 */
+ul li:last-child {
+    border: 1px solid rgb(0, 38, 255);
+}
+
+/* 속성 선택 */
+input[type="text"] {
+    border: 1px solid blue;
+}
+input[type="password"] {
+    border: 1px solid red;
+}
+
+/* 가상 선택자 */
+h1:hover {
+    border: 3px solid yellow;
+}
+h2:before {
+    content: "[before content] ";
+    color: blue;
+}
+h2:after {
+    content: " [after content] ";
+    color: red;
+}
+
+/* 클래스 선택자 */
+p.text1 {
+    border: 3px solid yellow;
+}
+
+div#my_div {
+    border: 3px solid red;
+}
+
+/* 폰트 굵기 */
+h5 {
+    font-weight: bold;
+}
+
+/* 폰트 크기 */
+article {
+    font-size: 20px;
+}
+
+article h1 {
+    font-size: 3em;
+}
+article p {
+    font-size: 1em;
+}
+
+/* 폰트 모양, 색상 */
+ul li:nth-of-type(1) {
+    color: red;
+    font-family: arial;
+}
+ul li:nth-of-type(2) {
+    color:rgba(255, 0, 242, 0.63);
+    font-size: 100px;
+    font-family: 'Monoton', cursive;
+}
+
+/* 웹 아이콘 */
+i.fa-airbnb {
+    font-size: 100px;
+}
+
+/* 텍스트 줄 간격 */
+.text_line1 {
+    font-size:  20px;
+    line-height: 80px;
+    border: 1px solid red;
+}
+.text_line2 {
+    font-size:  20px;
+    line-height: 1.5;
+    border: 1px solid blue;
+}
+
+/* 텍스트 정렬 */
+.text_align_left {
+    text-align: left;
+}
+.text_align_right {
+    text-align: right;
+}
+.text_align_center {
+    text-align: center;
+}
+.text_align_justify {
+    text-align: justify;
+}
+
+/* 텍스트 자간 */
+.text_lspace1 {
+    letter-spacing: 0px;
+}
+.text_lspace2 {
+    letter-spacing: 2px;
+}
+.text_lspace3 {
+    letter-spacing: -2px;
+}
+
+/* 영역별 크기 */
+.width1 {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+}
+.width2 {
+    border: 1px solid red;
+    width: 20%;
+    height: 20%;
+}
+.width3 {
+    border: 1px solid red;
+    width: 10vw;
+    height: 10vw;
+}
+.width4 {
+    border: 1px solid red;
+    width: 10vh;
+    height: 10vh;
+}
+
+/* 바깥쪽 여백 지정 */
+.margin1 {
+    border: 1px solid red;
+    margin: 20px 50px;
+}
+.margin2 {
+    border: 1px solid red;
+    margin: 50px auto;
+}
+.margin3 {
+    border: 1px solid red;
+    margin-left: 20px;
+}
+.margin4 {
+    border: 1px solid red;
+    margin-right: 20px;
+}
+
+
+/* 안쪽 여백 지정 */
+.padding1 {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+}
+.padding2 {
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+}
+.padding3 {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+}
+
+/* 테두리의 형태 */
+.border1 {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed red;
+}
+.border2 {
+    width: 100px;
+    height: 100px;
+    border: 3px dotted magenta;
+}
+.border3 {
+    width: 100px;
+    height: 100px;
+    border: 5px solid mediumseagreen;
+}
+
+/* 인라인 요소에 강제로 블록 속성을 배정 */
+strong, em {
+    border: 1px solid blueviolet;
+    height: 50px;
+    display: block;
+}
