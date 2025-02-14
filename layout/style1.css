@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+article {
+    border: 1px solid red;
+}
+
+ul li {
+    border: 1px solid blue;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

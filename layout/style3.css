@@ -1,0 +1,44 @@
+.wrap {
+    width: 800px;
+    margin: 100px auto;
+    border: 5px solid black;
+}
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrap .left {
+    width: 400px;
+    height: 400px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.wrap .right {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: right;
+    position: relative;
+}
+
+.wrap .right .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+       position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+
+.wrap .bottom {
+    width: 800px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+
+
