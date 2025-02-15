@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+/* 초기 설정 
+  - 여백/패딩 초기값 삭제, 불릿 없에기, 링크 밑줄 없에기 
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+header .inner {
+  width: 700px;
+  height: 120px;
+  margin: 0px auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+}
+
+header .inner a {
+  font: bold 24px/1 "arial";
+  color: #444;
+}
+
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+header .inner .util li {
+  float: left;
+}
+
+header .inner .util li a {
+  display: block;
+  font: 10px/1 "arial";
+  color: #999;
+  padding: 0px 10px;
+}
+
+header .inner #gnb {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+header .inner #gnb li {
+  float: left;
+}
+
+header .inner #gnb li a {
+  display: block;
+  font: bold 12px/1 "arial";
+  color: #555;
+  padding: 20px 40px;
+  transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+  background: #555;
+  color: #fff;
+}
+
+figure {
+  width: 100%;
+  height: calc(100vh-120px);
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  padding-top: 250px;
+}
+
+figure video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+figure .inner {
+  width: 600px;
+  margin: 0px auto;
+  position: relative;
+}
+
+figure .inner h1 {
+  font: normal 50px/1 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+figure .inner p {
+  font: 12px/1 "arial";
+  color: #666;
+  margin-bottom: 20px;
+}
+
+figure .inner a {
+  display: block;
+  width: 400px;
+  height: 30px;
+  border: 1px solid #bbb;
+  font: bold 11px/30px "arial";
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+
+figure .inner a:hover {
+  background: #fff;
+  color: #555;
+}
