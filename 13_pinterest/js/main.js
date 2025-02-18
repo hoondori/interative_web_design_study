@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     {
       itemSelector: "article",  // 배치 요소명 
       columnWidth: "article",   // 너비값을 구할 요소
-      transitionDuration: "0.5"  // 배치 애니메이션 속도
+      transitionDuration: "0.5s"  // 배치 애니메이션 속도
     }
   );
 
